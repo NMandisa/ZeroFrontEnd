@@ -1,0 +1,56 @@
+<ion-view title="Profile">
+    <ion-content padding="'true'" class="has-header">
+		<ion-list>
+            
+			
+
+				<div class="row">
+		   			<div class="col col-33"></div>
+			   			<div class="col col-33 col-center">
+				        	<h1>ZERO</h1>
+				        	<img src="pics/{{loggedin_gender}}.png" width="100" height="100" class="round-img" />
+			   			</div>
+		   			<div class="col col-33"></div>
+				</div>
+			<ion-item class="item-divider">Profile</ion-item>
+			<label class="item item-input">
+                <span class="input-label">Name</span>
+				<textarea placeholder="" readonly> {{" "+loggedin_name}}</textarea>
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Surname</span>
+                <textarea placeholder="" readonly > {{" "+loggedin_surname}}</textarea>
+            </label>
+			
+			<label class="item item-input">
+                <span class="input-label">Email</span>
+				<textarea placeholder="" readonly>{{" "+loggedin_emailAddress}} </textarea>
+            </label>
+
+			<label class="item item-input">
+                <span class="input-label">Username</span>
+				<textarea placeholder="" readonly > {{" "+loggedin_username}}</textarea>
+            </label>
+	
+            
+            <label class="item item-input">
+                <span class="input-label">Gender</span>
+				<textarea placeholder="" readonly > {{" "+loggedin_gender}}</textarea>
+            </label>
+			
+            
+			
+		
+		<div class="button-bar">
+            <a href="#/page5" class="button button-stable button-block  icon ion-edit"></a>
+            <a href="#/page6" title="verify user account" class="button button-stable button-block  icon ion-android-done-all"></a>
+        </div>
+		
+			<button ng-click="logout()" class="button button-balanced button-block  icon-left ion-log-out">Logout</button>
+
+			
+	        </ion-list>
+      
+    </ion-content>
+</ion-view>
